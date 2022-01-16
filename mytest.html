@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mytest01</title>
+	<meta charset="utf-8">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+	<!-- FontAwesome -->
+	<script src="https://kit.fontawesome.com/18bc5ffef0.js" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+		.title {
+			position: absolute;
+			color: grey;
+			opacity: 1;
+			text-align: center;
+			align-self: center;
+		}
+		#menu-featured-categories ul.sub-menu {
+   			 display: none;
+		}
+
+		#menu-featured-categories ul.visible {
+		    display: block;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="menu-featured-categories-container">
+		<ul id="menu-featured-categories">
+		    <li class="menu-item-has-children">
+		      <a href="#">Featured Categories</a>
+		        <ul class="sub-menu">
+		            <li>...</li>
+		            <li>...</li>
+		            <li>...</li>
+		        </ul>
+		    </li>
+		</ul>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+   			$('.menu-item-has-children').click(function() {
+        		$('.sub-menu').toggleClass('visible');
+   			});
+		});
+	</script>
+</body>
+</html>

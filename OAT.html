@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+	<!-- FontAwesome -->
+	<script src="https://kit.fontawesome.com/18bc5ffef0.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="test.css">
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+	@media (max-width: 1000px) {
+			.hhh {
+				margin-top: 159px!important;
+			}
+		}
+		@media (min-width: 1001px) {
+			.hhh {
+				margin-top: 196px!important;
+			}
+		}
+	body {
+	  font-family: Arial;
+	  font-size: 15px;
+	  padding: 8px;
+	}
+
+	* {
+	  box-sizing: border-box;
+	}
+
+	.row {
+	  display: -ms-flexbox; /* IE10 */
+	  display: flex;
+	  -ms-flex-wrap: wrap; /* IE10 */
+	  flex-wrap: wrap;
+	  margin: 0 -16px;
+	}
+
+	.col-25 {
+	  -ms-flex: 25%; /* IE10 */
+	  flex: 25%;
+	}
+
+	.col-50 {
+	  -ms-flex: 50%; /* IE10 */
+	  flex: 50%;
+	}
+
+	.col-75 {
+	  -ms-flex: 75%; /* IE10 */
+	  flex: 75%;
+	}
+
+	.col-25,
+	.col-50,
+	.col-75 {
+	  padding: 0 16px;
+	}
+
+	.containerr {
+	  background-color: #f2f2f2;
+	  padding: 5px 20px 15px 20px;
+	  border: 1px solid lightgrey;
+	  border-radius: 3px;
+	}
+
+	input[type=text] {
+	  width: 100%;
+	  margin-bottom: 20px;
+	  padding: 12px;
+	  border: 1px solid #ccc;
+	  border-radius: 3px;
+	}
+
+	label {
+	  margin-bottom: 10px;
+	  display: block;
+	}
+
+	.icon-container {
+	  margin-bottom: 20px;
+	  padding: 7px 0;
+	  font-size: 24px;
+	}
+
+	.btnn {
+	  color: white;
+	  padding: 12px;
+	  margin: 10px 0;
+	  border: none;
+	  width: 100%;
+	  border-radius: 3px;
+	  cursor: pointer;
+	  font-size: 17px;
+	}
+
+	.btnn:hover {
+	  background-color: #45a049;
+	}
+
+	a {
+	  color: #2196F3;
+	}
+
+	hr {
+	  border: 1px solid lightgrey;
+	}
+
+	span.price {
+	  float: right;
+	  color: grey;
+	}
+
+	@media (max-width: 800px) {
+	  .row {
+	    flex-direction: column-reverse;
+	  }
+	  .col-25 {
+	    margin-bottom: 20px;
+	  }
+	}
+	</style>	
+
+
+</head>
+<body>
+
+	<div id="header-outer" style="transform: translateY(0px) translate(0px, 0px);" class="side-widget-closed">
+      <header id="top" style="display: block;">
+          <div class="container" style="visibility: visible;">
+              <div class="row">
+                  <div class="col span_3">
+                      <a href="home.html" id="logo">
+                          <img src="Logo_with_Name-removebg-preview.png" class="default-logo">
+                      </a>
+                  </div>
+                  <div class="col span_9 col_last">
+                      <div class="mobile-icon">
+                          <div>
+                              <a href="#" class="closed" id="icon-mobile-blg" onclick="slideToggle()">
+                                  <span>
+                                      <i class="lines-button x2">
+                                          <i class="lines"></i>
+                                      </i>
+                                  </span>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="menu">
+                          <nav class="navbar navbar-expand">
+                              <ul class="navbar-nav">
+                                  <li class="nav-item">
+                                      <div class="dropdown">
+                                          <a href="project.html" class="dropbtn" style="text-decoration: none;">Galleries</a>
+                                          <div class="dropdown-content">
+                                              <a href="canadianwater.html" style="text-decoration: none;">Canadian Waters</a>
+                                              <a href="rainbow-reef.html" style="text-decoration: none;">Rainbow Reef</a>
+                                              <a href="dangerous-lagoon.html" style="text-decoration: none;">Dangerous Lagoon</a>
+                                              <a href="discovery-centre.html" style="text-decoration: none;">Discovery Centre</a>
+                                              <a href="the-gallery.html" style="text-decoration: none;">The Gallery</a>
+                                              <a href="raybay.html" style="text-decoration: none;">Ray Bay</a>
+                                              <a href="planet-jellies.html" style="text-decoration: none;">Planet Jellies</a>
+                                              <a href="life-support-system.html" style="text-decoration: none;">Life Support Systems</a>
+                                              <a href="shoreline-gallery.html" style="text-decoration: none;">Shoreline Gallery</a>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="nav-item">
+                                      <div class="dropdown">
+                                          <a href="programs.html" class="dropbtn" style="text-decoration: none;">Programs</a>
+                                          <div class="dropdown-content">
+                                              <a href="SEA SQUIRTS.html" style="text-decoration: none;">Sea SQUIRTS (AGES 2-4)</a>
+                                              <a href="PD DAY CAMP.html" style="text-decoration: none;">PD DAY CAMP</a>
+                                              <a href="Summer Day Camp.html" style="text-decoration: none;">SUMMER DAY CAMP (AGES 5-13)</a>
+                                              <a href="Marine Teens.html" style="text-decoration: none;">Marine Teens</a>
+                                              <a href="Stingray ExperIence.html" style="text-decoration: none;">STINGRAY EXPERIENCE</a>
+                                              <a href="Discovery.html" style="text-decoration: none;">DISCOVERY DIVE</a>
+                                              <a href="Sleepovers.html" style="text-decoration: none;">SLEEPOVERS</a>
+                                              <a href="Paint.html" style="text-decoration: none;">PAINT NITE®</a>
+                                              <a href="Aquarist.html" style="text-decoration: none;">Aquarist For A Day</a>
+                                              <a href="Dive Show.html" style="text-decoration: none;">DIVE SHOWS + AQUARIST TALKS</a>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="nav-item">
+                                      <div class="dropdown">
+                                          <a href="education.html" class="dropbtn" style="text-decoration: none;">Education</a>
+                                          <div class="dropdown-content">
+                                              <a href="homeschool.html" style="text-decoration: none;">Homeshool Families</a>
+                                              <a href="teacherresource.html" style="text-decoration: none;">Teacher Resources</a>
+                                              <a href="seascholar.html" style="text-decoration: none;">Sea Scholars Sponsorship</a>
+                                              <a href="diary.html" style="text-decoration: none;">Deep Sea Diary Blog</a>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="nav-item">
+                                      <div class="dropdown">
+                                          <a href="group_event.html" class="dropbtn" style="text-decoration: none;">Group+Event</a>
+                                          <div class="dropdown-content">
+                                              <a href="group_rate.html" style="text-decoration: none;">Group Rates (10+)</a>
+                                              <a href="request.html" style="text-decoration: none;">Request Your Event</a>
+                                              <a href="birthday.html" style="text-decoration: none;">Birthday Parties</a>
+                                              <a href="friday.html" style="text-decoration: none;">Friday Night Jazz</a>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="nav-item">
+                                      <div class="dropdown">
+                                          <a href="visit.html" class="dropbtn" style="text-decoration: none;">Visit</a>
+                                          <div class="dropdown-content">
+                                              <a href="faq.html" style="text-decoration: none;">Faqs</a>
+                                              <a href="shop.html" style="text-decoration: none;">Shop</a>
+                                              <a href="parking.html" style="text-decoration: none;">Parking + Directions</a>
+                                              <a href="dine.html" style="text-decoration: none;">Dine + Shop</a>
+                                              <a href="tips.html" style="text-decoration: none;">Tips For The Best Visit</a>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="nav-item">
+                                      <div class="dropdown">
+                                          <a href="contact.html" style="text-decoration: none;">Contact</a>
+                                      </div>
+                                  </li>
+                                  <li class="nav-item">
+                                      <div class="dropdown">
+                                          <a href="buytickets.html" class="dropbtn" style="text-decoration: none;">Buy Tickets</a>
+                                      </div>
+                                  </li>
+                              </ul>
+                          </nav>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </header>
+  </div>
+
+<script type="text/javascript">
+  function slideToggle() {
+    $('icon-mobile-blg').toggle('icon-mobile-blg');
+  }
+</script>
+
+<script type="text/javascript">
+  function slideToggle() {
+    $('#slide-out-widget-area-bg').toggle('');
+    $('#slide-out-widget-area').toggle('#slide-out-widget-area');
+  }
+</script>
+
+<script type="text/javascript">
+  function galleries() {
+    $('#galleries_section').slideToggle()
+  }
+</script>
+
+<script type="text/javascript">
+  function back() {
+    $('#galleries_section').slideToggle()
+  }
+</script>
+
+<script type="text/javascript">
+  function galleries_2() {
+    $('#galleries_section_2').slideToggle()
+  }
+</script>
+
+<script type="text/javascript">
+  function back_2() {
+    $('#galleries_section_2').slideToggle()
+  }
+</script>
+
+<script type="text/javascript">
+  function galleries_3() {
+    $('#galleries_section_3').slideToggle()
+  }
+</script>
+
+<script type="text/javascript">
+  function back_3() {
+    $('#galleries_section_3').slideToggle()
+  }
+</script>
+
+<script type="text/javascript">
+  function galleries_4() {
+    $('#galleries_section_4').slideToggle()
+  }
+</script>
+
+<script type="text/javascript">
+  function back_4() {
+    $('#galleries_section_4').slideToggle()
+  }
+</script>
+
+<script type="text/javascript">
+  function galleries_5() {
+    $('#galleries_section_5').slideToggle()
+  }
+</script>
+
+<script type="text/javascript">
+  function back_5() {
+    $('#galleries_section_5').slideToggle()
+  }
+</script>
+
+<script type="text/javascript">
+  function galleries_6() {
+    $('#galleries_section_6').slideToggle()
+  }
+</script>
+
+<script type="text/javascript">
+  function back_6() {
+    $('#galleries_section_6').slideToggle()
+  }
+</script>
+
+<script type="text/javascript">
+  function galleries_7() {
+    $('#galleries_section_7').slideToggle()
+  }
+</script>
+
+<script type="text/javascript">
+  function back_7() {
+    $('#galleries_section_7').slideToggle()
+  }
+</script>
+
+
+  <div class="slide-out-from-right solid" id="slide-out-widget-area-bg" style="height: 100%; width: 100%; opacity: 1; display: none;"></div>
+  <div class="slide-out-from-right open" id="slide-out-widget-area" data-back-txt="Back" style="transform: translate(0px, 0px); display: none; overflow: overlay;">
+      <div class="inner" style="height: auto; min-height: 269px;">
+          <a href="#" class="slide_out_area_close" onclick="slideToggle()">
+              <span class="icon-salient-x icon-default-style">
+                <i class="fas fa-times"></i>
+              </span>
+          </a>
+          <div  id="galleries" class="off-canvas-menu-container mobile-only" style="height: 262px;">
+            <div class="menu-wrap menuwrapper">
+              <ul class="menu menuopen">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-12403">
+                  <a href="project.html" onclick="galleries()">GALLERIES</a>
+                  <ul class="sub-menu" id="galleries_section">
+                    <li class="back" onclick="back()">
+                      <a href="#"> Back </a>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17017">
+                      <a href="canadianwater.html">Canadian Waters</a>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17062">
+                      <a href="rainbow-reef.html">Rainbow Reef</a>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17146">
+                      <a href="dangerous-lagoon.html">Dangerous Lagoon</a>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17269">
+                      <a href="discovery-centre.html">Discovery Centre</a>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17318">
+                      <a href="the-gallery.html">The Gallery</a>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17491">
+                      <a href="raybay.html">Ray Bay</a>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17582">
+                      <a href="planet-jellies.html">Planet Jellies</a>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17583">
+                      <a href="life-support-system.html">Life Support Systems</a>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12423">
+                      <a href="shoreline-gallery.html">Shoreline Gallery</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-8162 current_page_item menu-item-has-children menu-item-12408">
+                  <a href="programs.html" onclick="galleries_2()">PROGRAMS</a>
+                  <ul class="sub-menu" id="galleries_section_2">
+                    <li class="back" onclick="back_2()">
+                      <a href="#"> Back </a>
+                    </li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12417">
+                      <a href="#" onclick="galleries_3()">Camps + Clubs</a>
+                      <ul class="sub-menu" id="galleries_section_3">
+                        <li class="back" onclick="back_3()">
+                          <a href="#"> Back </a>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12418">
+                          <a href="#">Sea Squirts (Ages 2-4)</a>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18799">
+                          <a href="#">PD Day Camp (Ages 5-10)</a>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12420">
+                          <a href="#">Day Camp (Ages 5-13)</a>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14940">
+                          <a href="#">Marine Teens (Ages 15-18)</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12424">
+                      <a href="#" onclick="galleries_4()">Experiences</a>
+                      <ul class="sub-menu" id="galleries_section_4">
+                        <li class="back" onclick="back_4()">
+                          <a href="#"> Back </a>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12425">
+                          <a href="#">Stingray Experience</a>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12426">
+                          <a href="#">Discovery Dive</a>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12427">
+                          <a href="#">Sleepovers</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12430">
+                      <a href="#">Paint Nite®</a>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12432">
+                      <a href="#">Aquarist for a Day</a>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30769">
+                      <a href="#">Dive Shows</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-12404">
+                  <a href="education.html" onclick="galleries_5()">EDUCATION</a>
+                  <ul class="sub-menu" id="galleries_section_5">
+                    <li class="back" onclick="back_5()">
+                      <a href="#"> Back </a>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31030">
+                      <a href="homeschool.html">HOMESCHOOL FAMILIES</a>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31063">
+                      <a href="teacherresource.html">Teacher Resources</a>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12439">
+                      <a href="seascholar.html">Sea Scholars Sponsorship</a>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15791">
+                      <a href="diary.html">Deep Sea Diary Blog</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-12406">
+                  <a href="group_event.html" onclick="galleries_6()">GROUPS+EVENTS</a>
+                  <ul class="sub-menu" id="galleries_section_6">
+                    <li class="back" onclick="back_6()">
+                      <a href="#"> Back </a>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12487">
+                      <a href="group_rate.html">Group Rates (10+)</a>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12488">
+                      <a href="request.html">Request Your Event</a>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12485">
+                      <a href="birthday.html">Birthday Parties</a>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12486">
+                      <a href="friday.html">Friday Night Jazz</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-12405">
+                  <a href="visit.html" onclick="galleries_7()">VISIT</a>
+                  <ul class="sub-menu" id="galleries_section_7">
+                    <li class="back" onclick="back_7()">
+                      <a href="#"> Back </a>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12407">
+                      <a href="faq.html">FAQs</a>
+                    </li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30809">
+                      <a href="shop.html">Shop</a>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12493">
+                      <a href="parking.html">Parking + Directions</a>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12490">
+                      <a href="dine.html">Dine + Shop</a>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14542">
+                      <a href="tips.html">Tips for the Best Visit</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-12409">
+                  <a href="contact.html">CONTACT</a>
+                </li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30198">
+                  <a href="buytickets.html">BUY TICKETS</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+	<div class="hhh container-fluid p-4 bg-success text-white", style="font-weight: bolder;">
+		<center><h1 class="fadeout">Purchase Your <b>Online Access Ticket</b></h1></center>
+	</div>
+	<br>
+	<p style="font-size: 20px">Fill in all your details for your purchase</p>
+	<div class="row">
+	  <div class="col-50">
+	    <div class="container">
+	      <br>
+	      <b>Online Access Ticket</b>
+	      <br>
+	      <img src="ticket1.jpg" class="img-responsive center-block d-block mx-auto rounded" style="max-width: 80%">
+	      <hr>
+	      <table cellspacing="none" cellpadding="2" border="2" style="width: 100%">
+	      	<thead>
+	      		<tr>
+	      			<td><center><b>Programs</b></center></td>
+	      			<td><center><b>Price</b></center></td>
+		      		<td colspan="3"><center><b>Quantity</b></center></td>
+	      		</tr>
+	      	</thead>
+	      	<tbody>
+		      	<tr>
+		      		<td>Canadian Waters and Rainbow Reef</td>
+		      		<td><center>$30</center></td>
+		      		<td class="text-center">
+		      			<button id="add1" type="button" class="btn btn-danger">+</button>
+		      		</td>
+		      		<td class="text-center">
+		      			<b id="counter1" class="m-auto"></b>
+		      		</td>
+		      		<td class="text-center">
+		      			<button id="subtract1" type="button" class="btn btn-success">-</button>
+		      		</td>
+		      	</tr>
+		      	<tr>
+		      		<td>Rainbow Reef and Dangerous Lagoon</td>
+		      		<td><center>$30</center></td>
+		      		<td class="text-center">
+		      			<button id="add2" type="button" class="btn btn-danger">+</button>
+		      		</td>
+		      		<td class="text-center">
+		      			<b id="counter2" class="m-auto"></b>
+		      		</td>
+		      		<td class="text-center">
+		      			<button id="subtract2" type="button" class="btn btn-success">-</button>
+		      		</td>
+		      	</tr>
+		      	<tr>
+		      		<td>Gallery and Ray Bay</td>
+		      		<td><center>$30</center></td>
+		      		<td class="text-center">
+		      			<button id="add3" type="button" class="btn btn-danger">+</button>
+		      		</td>
+		      		<td class="text-center">
+		      			<b id="counter3" class="m-auto"></b>
+		      		</td>
+		      		<td class="text-center">
+		      			<button id="subtract3" type="button" class="btn btn-success">-</button>
+		      		</td>
+		      	</tr>
+		      	<tr>
+		      		<td>Ray Bay and Planet Jellies</td>
+		      		<td><center>$30</center></td>
+		      		<td class="text-center">
+		      			<button id="add4" type="button" class="btn btn-danger">+</button>
+		      		</td>
+		      		<td class="text-center">
+		      			<b id="counter4" class="m-auto"></b>
+		      		</td>
+		      		<td class="text-center">
+		      			<button id="subtract4" type="button" class="btn btn-success">-</button>
+		      		</td>
+		      	</tr>
+	      	</tbody>
+	      </table>
+	      <br><hr>
+	      <p>Total <span class="price" style="color:black">$<b id="total"></b></span></p>
+	    </div>
+	  </div>
+	  <div class="col-50">
+	    <div class="container">
+	      <form action="/action_page.php">
+	      
+	        <div class="row">
+	          <div class="col-50">
+	          	<br>
+	            <h3>Billing Address</h3>
+	            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+	            <input type="text" id="fname" name="firstname" placeholder="Full Name">
+	            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+	            <input type="text" id="email" name="email" placeholder="john@example.com">
+	            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+	            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+	            <label for="city"><i class="fa fa-institution"></i> City</label>
+	            <input type="text" id="city" name="city" placeholder="New York">
+
+	            <div class="row">
+	              <div class="col-50">
+	                <label for="state">State</label>
+	                <input type="text" id="state" name="state" placeholder="NY">
+	              </div>
+	              <div class="col-50">
+	                <label for="zip">Zip</label>
+	                <input type="text" id="zip" name="zip" placeholder="10001">
+	              </div>
+	            </div>
+	          </div>
+
+	          <div class="col-50">
+	          	<br>
+	            <h3>Payment</h3>
+	            <label for="fname">Accepted Cards</label>
+	            <div class="icon-container">
+	              <i class="fa fa-cc-visa" style="color:navy;"></i>
+	              <i class="fa fa-cc-amex" style="color:blue;"></i>
+	              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+	              <i class="fa fa-cc-discover" style="color:orange;"></i>
+	            </div>
+	            <label for="cname">Name on Card</label>
+	            <input type="text" id="cname" name="cardname" placeholder="Your Name">
+	            <label for="ccnum">Credit card number</label>
+	            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+	            <label for="expmonth">Exp Month</label>
+	            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+	            <div class="row">
+	              <div class="col-50">
+	                <label for="expyear">Exp Year</label>
+	                <input type="text" id="expyear" name="expyear" placeholder="2018">
+	              </div>
+	              <div class="col-50">
+	                <label for="cvv">CVV</label>
+	                <input type="text" id="cvv" name="cvv" placeholder="CVV">
+	              </div>
+	            </div>
+	          </div>
+	          
+	        </div>
+	        <label>
+	          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+	        </label>
+	        <input type="submit" value="Continue to checkout" onclick="Hello()" class="btnn btn-danger">
+	      </form>
+	    </div>
+	  </div>
+	</div>
+	<footer>
+	    <img src="edited.jpg" style="width: 100%;">
+	    <div class="footer_outer">
+	      <div class="container">
+	        <div class="footer_in">
+	          <div class="row">
+	            <div class="col-sm-3">
+	              <div class="col_1">
+	                <h4>LOCATION</h4>
+	                <div class="col_1_down">
+	                  <p>
+	                    288 Bremner Boulevard
+	                    <br>
+	                    Toronto, ON M5V 3L9, CANADA
+	                  </p>
+	                  <p>
+	                    Phone: (647) 351-FISH (3474)
+	                    <br>
+	                    Toll Free: 1 (877) 773-1497
+	                  </p>
+	                  <p>
+	                    <span>
+	                      <a href="#" style="text-decoration: none;">TGServices@​ripleysaquariumofcanada.com</a>
+	                    </span>
+	                  </p>
+	                  <h4>MORE RIPLEY’S ATTRACTIONS</h4>
+	                  <p>
+	                    <a href="#" style="text-decoration: none;">Ripley’s Believe It or Not! Niagara Falls</a>
+	                    <br>
+	                    <a href="#" style="text-decoration: none;">Ripley’s Aquarium of the Smokies</a>
+	                    <br>
+	                    <a href="#" style="text-decoration: none;">Ripley’s Aquarium of Myrtle Beach</a>
+	                  </p>
+	                </div>
+	              </div>
+	            </div>
+	            <div class="col-sm-3">
+	              <div class="col_2">
+	                <h4>NEWSLETTER</h4>
+	                <p>Get our "Scales & Tales" email newsletter with exclusive offers, news, and behind-the-scenes information for Ripley's Aquarium of Canada!</p>
+	                <div class="frm_form">
+	                  <form method="post">
+	                    <div class="input_sup">
+	                      <input type="text" value placeholder="Name">
+	                    </div>
+	                    <br>
+	                    <div class="input_sup">
+	                      <input type="email" placeholder="Email" required>
+	                    </div>
+	                    <br>
+	                    <div class="input_up">
+	                      <input type="submit" value="SIGN UP!">
+	                    </div>
+	                  </form>
+	                </div>
+	              </div>
+	            </div>
+	            <div class="col-sm-3">
+	              <div class="col_3">
+	                <h4>PROGRAMS</h4>
+	                <div class="target">
+	                  <a href="#" style="text-decoration: none;">Aquarist for a Day</a>
+	                  <br>
+	                  <a href="#" style="text-decoration: none;">Dive Shows + Aquarist Talks</a>
+	                  <br>
+	                  <a href="#" style="text-decoration: none;">Sea Squirts</a>
+	                  <br>
+	                  <a href="#" style="text-decoration: none;">PD Day Camp</a>
+	                  <br>
+	                  <a href="#" style="text-decoration: none;">Day Camps</a>
+	                  <br>
+	                  <a href="#" style="text-decoration: none;">Stingray Experience</a>
+	                  <br>
+	                  <a href="#" style="text-decoration: none;">Discovery Dive</a>
+	                  <br>
+	                  <a href="#" style="text-decoration: none;">Sleep with the Sharks</a>
+	                  <br>
+	                  <a href="#" style="text-decoration: none;">Morning Yoga</a>
+	                  <br>
+	                  <a href="#" style="text-decoration: none;">Photography Classes</a>
+	                  <br>
+	                  <a href="#" style="text-decoration: none;">Paint Nite</a>
+	                  <br>
+	                </div>
+	              </div>
+	            </div>
+	            <div class="col-sm-3">
+	              <div class="col_4">
+	                <h4>Group & Event</h4>
+	                <div class="target">
+	                  <p>
+	                    <a href="group_rate.html" style="text-decoration: none;">Group Sales</a>
+	                    <br>
+	                    <a href="request.html" style="text-decoration: none;">Request an Event</a>
+	                    <br>
+	                    <a href="birthday.html" style="text-decoration: none;">Birthday Parties</a>
+	                    <br>
+	                    <a href="friday.html" style="text-decoration: none;">Friday Night Jazz</a>
+	                  </p>
+	                  <div class="target_logo">
+	                    <a href="#">
+	                      <img src="https://www.tripadvisor.com/img/cdsi/img2/awards/v2/tchotel_2020_L-14348-2.png">
+	                    </a>
+	                  </div>
+	                </div>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	    <div class="footer-down">
+	      <div class="container">
+	        <div class="row">
+	          <div class="col-lg-8 sm-10">
+	            <p>
+	              Copyright © 2021 Ripley Entertainment Inc., All rights reserved. | Ripley's Aquarium of Canada 
+	              <a href="#">
+	                <span style="color:#1ddcf9;">Privacy Policy</span>
+	              </a>
+	               | 
+	              <a href="#">
+	                <span style="color:#1ddcf9;">Terms of Use</span>
+	              </a>
+	            </p>
+	          </div>
+	          <div class="col-lg-4 sm-2">
+	            <ul>
+	              <li>
+	                <a href="#">
+	                  <i class="fab fa-twitter"></i>
+	                </a>
+	              </li>
+	              <li>
+	                <a href="#">
+	                  <i class="fab fa-facebook-f"></i>
+	                </a>
+	              </li>
+	              <li>
+	                <a href="#">
+	                  <i class="fab fa-instagram"></i>
+	                </a>
+	              </li>
+	            </ul>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </footer>
+	<script type="text/javascript">
+
+		var total = 0;
+		$("#total").text(total);
+
+		var counter1 = 0;
+		$("#counter1").text(counter1);
+		$("#add1").click(function(){
+			if (counter1 < 10) {
+				counter1 = counter1 + 1;
+				total += 30;
+			}
+			$("#counter1").text(counter1);
+			$("#total").text(total);
+		});
+		$("#subtract1").click(function(){
+		  if (counter1 > 0) {
+		  counter1 = counter1 - 1;
+		  total -= 30;
+		  }
+		  $("#counter1").text(counter1);
+		  $("#total").text(total);
+		});
+
+		var counter2 = 0;
+		$("#counter2").text(counter2);
+		$("#add2").click(function(){
+			if (counter2 < 10) {
+				counter2 = counter2 + 1;
+				total += 30;
+			}
+			$("#counter2").text(counter2);
+			$("#total").text(total);
+		});
+		$("#subtract2").click(function(){
+		  if (counter2 > 0) {
+		  counter2 = counter2 - 1;
+		  total -= 30;
+		  }
+		  $("#counter2").text(counter2);
+		  $("#total").text(total);
+		});
+
+		var counter3 = 0;
+		$("#counter3").text(counter3);
+		$("#add3").click(function(){
+			if (counter3 < 10) {
+				counter3 = counter3 + 1;
+				total += 30;
+			}
+			$("#counter3").text(counter3);
+			$("#total").text(total);
+		});
+		$("#subtract3").click(function(){
+		  if (counter3 > 0) {
+		  counter3 = counter3 - 1;
+		  total -= 30;
+		  }
+		  $("#counter3").text(counter3);
+		  $("#total").text(total);
+		});
+
+		var counter4 = 0;
+		$("#counter4").text(counter4);
+		$("#add4").click(function(){
+			if (counter4 < 10) {
+				counter4 = counter4 + 1;
+				total += 30;
+			}
+			$("#counter4").text(counter4);
+			$("#total").text(total);
+		});
+		$("#subtract4").click(function(){
+		  if (counter4 > 0) {
+		  counter4 = counter4 - 1;
+		  total -= 30;
+		  }
+		  $("#counter4").text(counter4);
+		  $("#total").text(total);
+		});
+
+	</script>
+</body>
+</html>
